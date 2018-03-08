@@ -6,7 +6,7 @@ FROM ubuntu:17.04
 MAINTAINER Thomas Ingvarsson <ingvarsson.thomas@gmail.com>
 
 RUN apt-get -y update && \
-    apt-get -y install curl lib32gcc1 && \
+    apt-get -y install curl lib32gcc1 lib32stdc++6 && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ENV USER steam
