@@ -2,7 +2,7 @@
 #
 # Version 1.0.0
 
-FROM ubuntu:17.04
+FROM ubuntu:latest
 MAINTAINER Thomas Ingvarsson <ingvarsson.thomas@gmail.com>
 
 RUN apt-get -y update && \
