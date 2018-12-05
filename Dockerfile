@@ -3,7 +3,7 @@
 # Version 1.0.0
 
 FROM ubuntu:latest
-MAINTAINER Thomas Ingvarsson <ingvarsson.thomas@gmail.com>
+LABEL maintainer Thomas Ingvarsson <ingvarsson.thomas@gmail.com>
 
 RUN apt-get -y update && \
     apt-get -y install curl lib32gcc1 lib32stdc++6 && \
