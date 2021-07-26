@@ -1,6 +1,4 @@
-# SteamCMD
-
-FROM debian:buster-slim
+FROM debian:10-slim
 LABEL maintainer Thomas Ingvarsson <ingvarsson.thomas@gmail.com>
 
 ARG PUID=1000
