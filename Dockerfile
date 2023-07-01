@@ -1,4 +1,4 @@
-FROM debian:10-slim
+FROM debian:12-slim
 LABEL maintainer Thomas Ingvarsson <ingvarsson.thomas@gmail.com>
 
 ARG PUID=1000
