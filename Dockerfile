@@ -1,4 +1,4 @@
-FROM debian:11-slim
+FROM debian:12-slim
 LABEL maintainer Thomas Ingvarsson <ingvarsson.thomas@gmail.com>
 
 ARG PUID=1000
@@ -9,7 +9,7 @@ ENV STEAMCMD_DIR /home/$USER/steamcmd
 RUN apt-get update \
     && apt-get install -y \
     curl \
-    lib32gcc1-s1 \
+    lib32gcc-s1 \
     lib32stdc++6 \
     && rm -rf /var/lib/apt/lists/*
 
