@@ -12,10 +12,13 @@ on:
 
   # Nightly to capture latest base image and steamcmd version
   schedule:
-    - cron:  '* 21 * * *'
+    - cron: "* 21 * * *"
 
   # Run tests for any PRs.
   pull_request:
+
+  # Allow to trigger manually from github ui
+  workflow_dispatch:
 
 jobs:
   dockerhub-registry:
